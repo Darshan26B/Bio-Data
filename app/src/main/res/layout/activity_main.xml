@@ -18,6 +18,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -30,10 +31,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <EditText
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="First Name :"/>
+                    android:text="First Name :"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"/>
 
                 <EditText
                     android:layout_width="170dp"
@@ -46,10 +50,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <EditText
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Last Name :" />
+                    android:text="Last Name :"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"/>
 
                 <EditText
                     android:layout_width="170dp"
@@ -62,10 +69,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <EditText
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=" Birth-Data  :"/>
+                    android:text="Birth-Data  :"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"/>
 
                 <EditText
                     android:layout_width="170dp"
@@ -78,10 +88,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <EditText
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="E-mail Id     :" />
+                    android:text="E-mail Id     :"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"/>
 
                 <EditText
                     android:layout_width="170dp"
@@ -94,11 +107,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <EditText
+                <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:text="Gender      :"
- />
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"/>
 
                 <RadioGroup
                     android:id="@+id/rg"
@@ -131,10 +147,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <EditText
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mobile No   :" />
+                    android:text="Mobile No   :"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"/>
 
                 <EditText
                     android:layout_width="170dp"
@@ -142,70 +161,75 @@
                     android:inputType="number"
                     android:text="" />
             </LinearLayout>
-            <EditText
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="left"
                 android:text="Your Hobby :"
                 android:textColor="@color/black"
-                android:gravity="left"/>
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_gravity="center">
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp"/>
 
-            <CheckBox
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Sports"
-                android:textSize="20dp"
-                android:textStyle="italic|bold" />
+                android:orientation="vertical">
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Game"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Sports"
+                    android:textSize="20dp"
+                    android:textStyle="italic|bold" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Game"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
 
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="journey"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="journey"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
 
-            <CheckBox
-                android:id="@+id/PHP"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Music"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                <CheckBox
+                    android:id="@+id/PHP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Music"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
 
-        </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="right"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/img" />
 
     </LinearLayout>
+
     <Button
         android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:text="Submit"
-        android:textSize="20dp"
         android:textAllCaps="false"
-        android:layout_marginTop="20dp"/>
+        android:textSize="20dp" />
 </LinearLayout>
